@@ -1,7 +1,6 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}{{ name1 }}</h1>
-    <router-link to="/home">主页</router-link> 
+  <div>
+111
   </div>
 </template>
 
@@ -18,6 +17,7 @@ export default {
   },
   created() {
     this.getNewsList()
+    console.log(this);
   },
   methods: {
     getNewsList() {

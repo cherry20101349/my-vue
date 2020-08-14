@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}{{ name1 }}</h1>
     <router-link to="/home">主页</router-link> 
   </div>
 </template>
