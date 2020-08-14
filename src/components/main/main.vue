@@ -33,9 +33,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-.hello{
-  h1{
-    color: darkgreen;
-  }
+div{
+  font-size: .6rem;
 }
 </style>
