@@ -1,13 +1,18 @@
 <template>
   <div>
+    <login></login>
     111
-    <p>{{ $store.state.name }}</p>
+    <p>{{ $store.state.isLogin }}</p>
   </div>
 </template>
 
 <script>
+import login from "../../components/login/login";
 export default {
   name: "HelloWorld",
+  components: {
+    login,
+  },
   props: {
     msg: String,
   },
@@ -40,8 +45,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
-div {
-  font-size: 0.6rem;
-}
-</style>
+<style></style>

@@ -8,7 +8,20 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
   state: {
     // 存放的键值对就是所要管理的状态
-    name: "helloVuex cherry",
+    isLogin: false,
+  },
+  getters: {
+    isLogin: (state) => state.isLogin,
+  },
+  mutations: {
+    userStatus(state, flag) {
+      state.isLogin = flag;
+    },
+  },
+  actions: {
+    setUser({ commit }, flag) {
+      commit("userStatus", flag);
+    },
   },
 });
 
