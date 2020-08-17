@@ -1,6 +1,7 @@
 <template>
   <div>
     111
+    <p>{{ $store.state.name }}</p>
   </div>
 </template>
 
@@ -21,8 +22,16 @@ export default {
   },
   methods: {
     getNewsList() {
+      let params = {
+        courseType: 0,
+        deptId: null,
+        grade: null,
+        page: 1,
+        pageSize: 8,
+        subject: "",
+      };
       this.axios
-        .post("http://192.168.6.213/tpi/course%20/getCourses")
+        .post("http://192.168.6.213/tpi/course%20/getCourses", params)
         .then(() => {})
         .catch(() => {});
     },
